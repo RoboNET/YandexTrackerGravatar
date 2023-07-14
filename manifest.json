@@ -1,0 +1,21 @@
+{
+ "manifest_version": 3,
+ "name": "Yandex Tracker Gravatar",
+ "description": "Replace users icons to gravatar based",
+ "version": "1.0.0",
+ "author": "Mikhail Korolev",
+ "icons": {
+    "128": "icon.png"
+  },
+ "action": {
+   "default_icon": "icon.png",
+   "default_title": "Yandex Tracker Gravatar"
+ },
+ "content_scripts": [
+  {
+    "matches": ["*://tracker.yandex.ru/*"],
+    "js": ["logic.js", "jquery.min.js"]
+  }
+],
+ "permissions": ["activeTab", "storage"]
+}
