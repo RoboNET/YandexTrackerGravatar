@@ -17,5 +17,5 @@
     "js": ["logic.js", "jquery.min.js"]
   }
 ],
- "permissions": ["activeTab", "storage"]
+ "permissions": []
 }
